@@ -1,10 +1,10 @@
-package com.hris_bank_adapter;
+package hris_bank_adapter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class HrisBankAdapterApplicationTests {
 
 	@Test
 	void contextLoads() {

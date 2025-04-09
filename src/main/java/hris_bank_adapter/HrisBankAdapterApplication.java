@@ -1,13 +1,13 @@
-package com.hris_bank_adapter;
+package hris_bank_adapter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class HrisBankAdapterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(HrisBankAdapterApplication.class, args);
 	}
 
 }
