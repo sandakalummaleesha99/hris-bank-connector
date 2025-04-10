@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: hris-bank-adapter
+
+xml:
+  base:
+    file:
+      path: "C:\\P-DEV\\GitHub\\Server\\HRIS\\xml"
+
+
+
