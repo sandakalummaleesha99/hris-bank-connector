@@ -42,7 +42,7 @@ public class ExtractXMLServiceImpl implements ExtractXMLService {
                     HeaderDTO header = new HeaderDTO();
                     header.setCompanyRegName(headerElement.getElementsByTagName("CompanyRegName").item(0).getTextContent());
                     header.setCompanyRegNo(headerElement.getElementsByTagName(HRISXMLElements.COMPANY_REG_NO.getElement()).item(0).getTextContent());
-                    extractedData.setHeaderDTO(header);
+                    extractedData.setHeader(header);
                 }
 
                 NodeList footerNodes = xmlDocument.getElementsByTagName(HRISXMLElements.FOOTER.getElement());
@@ -53,7 +53,7 @@ public class ExtractXMLServiceImpl implements ExtractXMLService {
                             Double.parseDouble(footerElement.getElementsByTagName(HRISXMLElements.CTRL_SUM.getElement()).item(0).getTextContent()
                             )
                     ));
-                    extractedData.setFooterDTO(footer);
+                    extractedData.setFooter(footer);
                 }
 
                 NodeList nList = xmlDocument.getElementsByTagName(HRISXMLElements.EMPLOYEE_INFO.getElement());
@@ -83,7 +83,7 @@ public class ExtractXMLServiceImpl implements ExtractXMLService {
                         employeeInfos.add(employeeInfo);
                     }
                 }
-                extractedData.setEmployeeInfoDTOS(employeeInfos);
+                extractedData.setEmployeeInfoS(employeeInfos);
                 documents.add(extractedData);
 
             } catch (SAXException | IOException | ParserConfigurationException e) {

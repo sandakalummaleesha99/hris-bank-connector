@@ -16,11 +16,11 @@ import java.util.List;
 public class DocumentDTO {
 
     @XmlElement(name = "Header")
-    private HeaderDTO headerDTO;
+    private HeaderDTO header;
 
     @XmlElement(name = "EmployeeInfo")
-    private List<EmployeeInfoDTO> employeeInfoDTOS;
+    private List<EmployeeInfoDTO> employeeInfoS;
 
     @XmlElement(name = "Footer")
-    private FooterDTO footerDTO;
+    private FooterDTO footer;
 }
