@@ -6,6 +6,8 @@ spring:
 
 xml:
   base:
+    commercial:
+      endpoint: "http://localhost:8084/ws"
     file:
       path: "C:\\P-DEV\\GitHub\\Server\\HRIS\\xml"
 

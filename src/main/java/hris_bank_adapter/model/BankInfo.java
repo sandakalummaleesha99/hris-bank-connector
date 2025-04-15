@@ -2,6 +2,7 @@ package hris_bank_adapter.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Embeddable
 public class BankInfo {
 
@@ -25,7 +27,7 @@ public class BankInfo {
     private String bankAccountNo;
 
     @Column(name = "transaction_amount")
-    private String transactionAmount;
+    private double transactionAmount;
 
     @Column(name = "transaction_currency")
     private String transactionCurrency;

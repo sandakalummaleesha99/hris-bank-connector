@@ -29,6 +29,9 @@ public class XMLTransactionInfo {
     @Column(name = "nic")
     private String nic;
 
+    @Column(name = "payment_ref_number")
+    private String paymentRefNumber;
+
     @Embedded
     @AttributeOverrides(value = {
             @AttributeOverride(name = "bankName", column = @Column(name = "bank_name")),
@@ -42,6 +45,6 @@ public class XMLTransactionInfo {
     private BankInfo bankInfo;
 
     @JoinColumn(name = "xml_transaction_log_id", nullable = false)
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private XMLTransactionLog xmlTransactionLog;
 }

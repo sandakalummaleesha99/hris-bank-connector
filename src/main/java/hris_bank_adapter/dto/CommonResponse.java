@@ -1,4 +1,4 @@
-package hris_bank_adapter.util;
+package hris_bank_adapter.dto;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;
